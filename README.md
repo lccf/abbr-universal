@@ -19,7 +19,7 @@ A Fish shell plugin that helps you manage universal abbreviations by automatical
 Install with [Fisher](https://github.com/jorgebucaran/fisher):
 
 ```fish
-fisher add lccf/abbr-universal
+fisher install lccf/abbr-universal
 ```
 
 ### Usage
@@ -62,7 +62,7 @@ abbr_universal remove gs
 使用 [Fisher](https://github.com/jorgebucaran/fisher) 安装：
 
 ```fish
-fisher add lccf/abbr-universal
+fisher install lccf/abbr-universal
 ```
 
 ### 使用方法
