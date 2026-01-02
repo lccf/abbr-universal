@@ -54,7 +54,8 @@ function abbr_universal
         else
           # If no comment line found, add comment and abbreviation
           cat $config_file > $temp_file
-          echo "\n# abbr" >> $temp_file
+          echo "" >> $temp_file
+          echo "# abbr" >> $temp_file
           echo "abbr -a $abbr_name $escaped_value" >> $temp_file
         end
         # Move temporary file to target location
