@@ -45,7 +45,7 @@ function abbr_universal
         # Create temporary file
         set -l temp_file (mktemp)
         # Find # abbr comment line
-        set -l abbr_section (grep -n "^# abbr" $config_file | cut -d: -f1)
+        set -l abbr_section (grep -n "^# abbr" $config_file | cut -d: -f1 | head -n 1)
         if test -n "$abbr_section"
           # Update content using temporary file
           head -n $abbr_section $config_file > $temp_file
